@@ -13,7 +13,7 @@
 .serif,
 body,
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Nanum Gothic', serif;
 }
 .sans-serif,
 h1,
@@ -29,7 +29,7 @@ h6,
 .btn,
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Gamja Flower', cursive;
 }
 body {
   font-size: 20px;
@@ -95,7 +95,7 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: #fff;
+    color: #000;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
@@ -167,7 +167,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: #fff;
+  color: #000;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -443,7 +443,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: brand-primaryz;
 }
 article .container .row img {
   max-width: 100% !important;
@@ -469,7 +469,7 @@ article .container .row .video-container embed {
 }
 article .container .row blockquote {
   font-style: italic;
-  font-family: "Georgia", serif;
+  font-family: "Open Sans", serif;
   font-size: 1.2em;
   padding: 0 30px 15px;
   text-align: center;
@@ -614,4 +614,121 @@ pre .clojure .title {
 }
 pre .deletion {
   color: #dc322f;
+}
+.buttonDownload {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  background-color: #4cc713;
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
+}
+.buttonDownload:hover {
+  background-color: #333;
+  color: #fff;
+}
+.buttonDownload:before,
+.buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+}
+.buttonDownload:before {
+  width: 14px;
+  height: 5px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+}
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 1s linear infinite;
+  animation-play-state: paused;
+}
+.buttonDownload:hover:before {
+  border-color: #4cc713;
+}
+.buttonDownload:hover:after {
+  border-top-color: #4cc713;
+  animation-play-state: running;
+}
+@-moz-keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
+@-o-keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
+@keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
 }

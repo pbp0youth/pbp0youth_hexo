@@ -4,9 +4,9 @@
 
 # Site
 title: 꿈틀꿈틀 수련회
-subtitle:  2019 "괜찮아"
+subtitle:  2019년에도 "괜찮아"
 description: 꿈틀꿈틀 수련회
-keywords: pbp
+keywords: kumtle
 author: Sungdon Kim
 language: ko
 timezone: Asia/Seoul
@@ -85,3 +85,7 @@ deploy:
 ##
 encrypt:
   enable: true
+
+# sitemap auto generator
+sitemap:
+  path: sitemap.xml

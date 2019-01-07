@@ -4,26 +4,26 @@ menu:
   Categories: /categories
 
 # Title on top left of menu. Leave empty to use main blog title
-menu_title: PBP
+menu_title: 꿈틀꿈틀
 
 # URL of the Home page image
-index_cover: http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg
+index_cover: /kumtle_15_poster.png
 
 # Default post title
 default_post_title: Kumtle
 
 # Comments. Choose one by filling up the information
-comments:
+#comments:
   # Disqus comments
-  disqus_shortname:
+#  disqus_shortname: pbp0youth-github-io
   # Facebook comments
-  facebook:
-    appid:
-    comment_count: 5
-    comment_colorscheme: light
+#  facebook:
+#    appid:
+#    comment_count: 5
+#    comment_colorscheme: light
 
 # Google Analytics Tracking ID
-google_analytics:
+google_analytics: UA-126482458-1
 
 # Addthis ID
 addthis:
