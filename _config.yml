@@ -80,6 +80,7 @@ theme: clean-blog
 deploy:
   type: git
   repo: https://github.com/pbp0youth/pbp0youth.github.io.git
+  branch: master
 
 # Security
 ##
